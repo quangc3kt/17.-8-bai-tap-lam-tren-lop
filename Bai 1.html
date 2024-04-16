@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển độ C sang độ F</title>
+</head>
+<body>
+<h3>Chuyển độ C sang độ F</h3>
+<input type="number" id="a" placeholder="Nhập độ C">
+<button onclick="kq()">Kết qủa</button>
+<p id="kq"></p>
+</body>
+<script>
+    function kq(){
+        let a = document.getElementById('a').value;
+        let b = a * 9/5 + 32
+        document.getElementById('kq').innerHTML = 'Độ F=' + b + '(F)'
+    }
+</script>
+
+</html>

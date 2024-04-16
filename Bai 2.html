@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ mét sang feet </title>
+</head>
+<body>
+<h3>Chuyển từ mét sang feed</h3>
+<input type="number" id="a" placeholder="Nhập số">
+<button onclick="kq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+<script>
+    function kq(){
+        let a = document.getElementById('a').value;
+        let b = a * 3.2808
+        document.getElementById('kq').innerHTML= 'Chiều dài Feet=' + b + '(ft)'
+    }
+</script>
+</html>

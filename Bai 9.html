@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 3 số thực</title>
+</head>
+<body>
+<h3>Kiểm tra có phải là cạnh của 1 tam giác</h3>
+<input type="number" id="a" placeholder="Nhập cạnh a">
+<input type="number" id="b" placeholder="Nhập cạnh b">
+<input type="number" id="c" placeholder="Nhập cạnh c">
+<button onclick="kq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+<script>
+    function kq(){
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let c = document.getElementById('c').value;
+        let d = a + b;
+        let e = b + c;
+        let f = a + c;
+        if(a > 0 && b>0 && c>0){
+            document.getElementById('kq').innerHTML='là cạnh của một tam giác';
+        }else {
+            document.getElementById('kq').innerHTML='Không thỏa mãn điều kiện';
+        }
+        if( d > c ){
+            document.getElementById('kq').innerHTML='là cạnh của một tam giác';
+        }else {
+            document.getElementById('kq').innerHTML='Không thỏa mãn điều kiện';
+        }
+        if (e > a){
+            document.getElementById('kq').innerHTML='là cạnh của một tam giác';
+        }else {
+            document.getElementById('kq').innerHTML='Không thỏa mãn điều kiện';
+        }
+        if (f > b){
+            document.getElementById('kq').innerHTML='là cạnh của một tam giác';
+        }else {
+            document.getElementById('kq').innerHTML='Không thỏa mãn điều kiện';
+        }
+    }
+</script>
+</html>
